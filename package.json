@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start-": "nodemon -e ts  --exec \"npm run app\"",
+    "start_": "nodemon -e ts  --exec \"npm run app\"",
     "start": "node server.js",
     "app": "ng build && node server.js",
     "build:dev": "ng build",
@@ -20,6 +20,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "^1.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",
