@@ -14,7 +14,9 @@
     "build:dev": "ng build",
     "build:prod": "ng build -prod",
     "serve:dev": "npm run build:dev && cd dist && node server.js",
-    "serve:prod": "npm run build:prod && cd dist && node server.js"
+    "serve:prod": "npm run build:prod && cd dist && node server.js",
+    "preinstall": "npm install -g http-server",
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
