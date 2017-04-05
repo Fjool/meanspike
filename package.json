@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "start-": "nodemon -e ts  --exec \"npm run app\"",
-    "start": "ng build && node server.js",
+    "start": "node server.js",
     "app": "ng build && node server.js",
     "build:dev": "ng build",
     "build:prod": "ng build -prod",
