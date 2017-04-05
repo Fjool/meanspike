@@ -7,6 +7,7 @@ import { AppComponent   } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 import { RouterModule   } from '@angular/router';
 import { PostsService   } from './posts.service';
+import { TestformComponent } from './testform/testform.component';
 
 // Define the routes
 // Not the best way, but following tutorial
@@ -19,13 +20,18 @@ const ROUTES = [
   {
     path: 'posts',
     component: PostsComponent
+  },
+  {
+    path: 'testform',
+    component: TestformComponent
   }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    PostsComponent,
+    TestformComponent
   ],
   imports: [
     BrowserModule,

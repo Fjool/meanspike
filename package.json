@@ -3,18 +3,20 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "dev": "ng build && nodemon server.js",
+    "start": "node server.js",
     "ng": "ng",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start": "nodemon -e ts  --exec \"npm run app\"",
-    "start": "node server.js",
+    "start_": "nodemon -e ts  --exec \"npm run app\"",
     "app": "ng build && node server.js",
     "build:dev": "ng build",
     "build:prod": "ng build -prod",
     "preinstall": "npm install -g http-server",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build --aot -prod",
+    "deploy": "git push heroku master"
   },
   "private": true,
   "dependencies": {
